@@ -1,0 +1,76 @@
+---
+warning: false
+message: false
+format: html
+theme: styles.css
+echo: false
+embed-resources: true
+toc: false
+---
+
+::: column-screen
+```{r, include=FALSE}
+
+library(tidyverse)
+library(readxl)
+
+list <- read_csv("input/unemployment_rate_march_25.csv")
+```
+:::
+
+::: column-screen
+```{r}
+#| column: screen
+
+library(reactable)
+library(reactablefmtr)
+library(scales)
+
+list <- list |> 
+  filter(category == "unemployment_rate") |> 
+  select(year_month, value) |> 
+  mutate(value = value / 100)
+
+
+table <- list |> 
+  reactable(height = 500,
+            highlight = TRUE,
+            striped = TRUE,
+            searchable = T,
+            theme = reactableTheme(
+              highlightColor = "#f3fafb",
+              borderColor = "hsl(0, 0%, 93%)",
+              headerStyle = list(borderColor = "hsl(0, 0%, 90%)")),
+            
+            columns = list(
+              value = colDef(format = colFormat(percent = T),
+                                    name = "Unemployment Rate (%)"
+                                    ),
+              year_month = colDef(name = "Month"
+                                    )
+              
+            )
+            
+            
+            )
+
+
+library(htmltools)
+library(htmlwidgets)
+
+# Create the HTML structure
+html_content <- tagList(
+  # Link the CSS file
+  tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
+  
+  # Create a div with styling
+  tags$div(
+    table  # Embed the reactable table inside
+  )
+)
+
+html_content
+
+```
+
+:::

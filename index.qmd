@@ -1,0 +1,19 @@
+---
+format: 
+  html:
+    css: styles.css
+editor: visual
+embed-resources: true
+---
+
+## Table List
+
+-   Ramadhan Bazar:
+    -   Food: [link](https://zahiernasrudin.github.io/for_table/rice_ramadhan_bazar.html)
+    -   Drink: [link](https://zahiernasrudin.github.io/for_table/drink_ramadhan_bazar.html)
+    -   Kuih: [link](https://zahiernasrudin.github.io/for_table/kuih_ramadhan_bazar.html)
+-   Government hospital beds utilization: [bed_table](https://zahiernasrudin.github.io/for_table/bed_table.html)
+-   Iced latte price Malaysia: [latte_price](https://zahiernasrudin.github.io/for_table/latte_price.html)
+-   Putrajaya Park: [park_putrajaya](https://zahiernasrudin.github.io/for_table/park_putrajaya.html)
+-   Unemployment rate Feb 25: [rate_feb25](https://zahiernasrudin.github.io/for_table/unemployment%20rate-feb25.html)
+-   Average Price: [average_price](https://zahiernasrudin.github.io/for_table/food_drink_price.html)
