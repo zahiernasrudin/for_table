@@ -15,5 +15,7 @@ embed-resources: true
 -   Government hospital beds utilization: [bed_table](https://zahiernasrudin.github.io/for_table/bed_table.html)
 -   Iced latte price Malaysia: [latte_price](https://zahiernasrudin.github.io/for_table/latte_price.html)
 -   Putrajaya Park: [park_putrajaya](https://zahiernasrudin.github.io/for_table/park_putrajaya.html)
--   Unemployment rate Feb 25: [rate_feb25](https://zahiernasrudin.github.io/for_table/unemployment%20rate-feb25.html)
+-   Unemployment rate
+    -   Feb 25: [rate_feb25](https://zahiernasrudin.github.io/for_table/unemployment%20rate-feb25.html)
+    -   March 25: [rate_march25](https://zahiernasrudin.github.io/for_table/unemployment%20rate-march25.html)
 -   Average Price: [average_price](https://zahiernasrudin.github.io/for_table/food_drink_price.html)
